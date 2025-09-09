@@ -17,7 +17,7 @@ const DashboardHeader = (props) => {
   return (
     <div className={`dashboard-header ${className}`}>
       <div className="container-dashboard ">
-        <div className="py-2 sm:py-4 flex flex-col md:flex-row-reverse  md:items-center justify-between">
+        <div className="flex flex-col md:flex-row-reverse  md:items-center justify-between">
           {/* Top Row - Date/Time */}
           <div className="flex md:justify-end items-center mb-2 sm:mb-3">
             <DateTime date={date} time={time} />
