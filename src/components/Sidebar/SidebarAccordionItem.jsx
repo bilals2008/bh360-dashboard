@@ -9,7 +9,7 @@ export const AccordionMenuItem = ({ item, activeSubItem, onSubItemClick }) => {
 
   return (
     <AccordionItem value={item.id} className="border-none">
-      <AccordionTrigger className="flex items-center gap-3 px-3 rounded-lg hover:bg-[#524feb] data-[state=open]:bg-[#524feb] data-[state=open]:text-white border-none ">
+      <AccordionTrigger className="flex items-center gap-3 px-3 rounded-lg hover:bg-[#524feb] hover:text-muted data-[state=open]:bg-[#524feb] data-[state=open]:text-white border-none ">
         <div className="flex items-center gap-3 flex-1">
           <Icon size={20} />
           <span className="text-sm truncate overflow-hidden">
