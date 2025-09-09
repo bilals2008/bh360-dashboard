@@ -1,5 +1,5 @@
 // File: src/dashboard/dashboardHeader/DashboardHeader.jsx
-// Generic component for other pages - just pass different props
+
 import React from "react";
 import Breadcrumb from "./Breadcrumbs";
 import PageTitle from "./PageTitle";

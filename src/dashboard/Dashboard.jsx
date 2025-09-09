@@ -1,11 +1,12 @@
 // File: src/dashboard/Dashboard.jsx
-import React from 'react'
-import EmployeeAttendanceHeader from './dashboardHeader/EmployeeAttendanceHeader';
+
+import { Outlet } from 'react-router-dom';
+import EmpolyeeAttendace from './EmpolyeeAttentance/EmpolyeeAttendace';
 
 function Dashboard() {
   return (
   <div className='font-karla'>
- <EmployeeAttendanceHeader/>
+    <Outlet/>
   </div>
   )
 }

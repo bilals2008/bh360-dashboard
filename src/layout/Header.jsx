@@ -1,3 +1,4 @@
+// File: src/layout/Header.jsx
 import { ChevronDown } from "lucide-react";
 import Logo from "../components/Header/Logo";
 import GreetText from "../components/Header/GreetText";

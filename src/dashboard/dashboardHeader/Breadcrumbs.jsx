@@ -2,6 +2,7 @@
 // File: src/dashboard/dashboardHeader/Breadcrumbs.jsx
 import React from "react";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
 
 const Breadcrumbs = ({ items, className = "" }) => {
   return (
@@ -15,7 +16,8 @@ const Breadcrumbs = ({ items, className = "" }) => {
               </BreadcrumbSeparator>
             )}
             <BreadcrumbItem>
-              <button
+              <Button
+              variant={"none"}
                 className={`pl-2 py-1 rounded-md transition-colors touch-manipulation min-h-[32px] ${
                   item.active
                     ? "text-[#524feb] font-medium bg-[#524feb]/10"
@@ -24,7 +26,7 @@ const Breadcrumbs = ({ items, className = "" }) => {
                 onClick={item.onClick}
               >
                 {item.label}
-              </button>
+              </Button>
             </BreadcrumbItem>
           </React.Fragment>
         ))}
