@@ -36,24 +36,3 @@ const DashboardHeader = (props) => {
 };
 
 export default DashboardHeader;
-
-// Usage example for other pages:
-/*
-// For Reports page:
-<DashboardHeader 
-  title="Reports and Analytics"
-  breadcrumbItems={[
-    { label: "Dashboard", active: false },
-    { label: "Reports and Analytics", active: true },
-  ]}
-/>
-
-// For Schedule page:
-<DashboardHeader 
-  title="Schedule"
-  breadcrumbItems={[
-    { label: "Dashboard", active: false },
-    { label: "Schedule", active: true },
-  ]}
-/>
-*/

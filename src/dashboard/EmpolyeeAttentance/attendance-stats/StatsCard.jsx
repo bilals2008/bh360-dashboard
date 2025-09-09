@@ -11,7 +11,7 @@ const StatsCard = ({
  
 
   return (
-    <div className={`p-2 `}>
+    <div className={`p-2 sm:p-4 bg-card rounded-lg border border-border`}>
       <div className="flex items-center justify-evenly lg:justify-between my-3 sm:my-4">
         <div className="rounded-xl bg-muted/50">
           <div className="text-[#524feb] text-sm sm:text-xs">
@@ -33,7 +33,7 @@ const StatsCard = ({
         <h3 className="text-xs sm:text-sm font-medium text-muted-foreground mb-1 sm:mb-2 leading-tight">
           {title}
         </h3>
-        <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground">
+        <p className=" text-xl sm:text-2xl lg:text-3xl font-medium text-foreground">
           {value}
         </p>
       </div>
