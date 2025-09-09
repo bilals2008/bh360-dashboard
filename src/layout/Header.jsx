@@ -15,7 +15,7 @@ export default function Header() {
         </div>
 
         {/* Right side */}
-        <div className="flex flex-1 items-center gap-5 ml-auto lg:justify-end justify-between flex-row-reverse lg:flex-row text-gray-700">
+        <div className="flex flex-1 items-center ml-auto lg:justify-end justify-between flex-row-reverse lg:flex-row text-gray-700">
           <IconsMenu />
           <AvatarSec />
         </div>

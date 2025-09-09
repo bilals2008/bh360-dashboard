@@ -152,10 +152,13 @@
     @apply bg-background text-foreground font-karla;
   }
 }
-
+ .bg-hover {
+    @apply hover:bg-[#524feb] hover:text-white focus:bg-[#524feb] focus:text-white;
+  }
 /* Dashboard Specific Styles */
 @layer components {
   /* Status Badge Styles */
+ 
   .status-present {
     @apply bg-success/10 text-success border border-success/20;
   }

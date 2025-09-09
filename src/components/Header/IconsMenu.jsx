@@ -1,24 +1,38 @@
-import { Bell, Mail, Settings } from 'lucide-react';
-import React from 'react'
+import {
+  Bell,
+  Mail,
+  MessageSquare,
+  Users,
+  FileText,
+  AlertTriangle,
+  BarChart3,
+  UserPlus,
+} from "lucide-react";
+import React from "react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import SettingDropdown from "./dropdowns/SettingDropdown";
+import MessageDropdown from "./dropdowns/MessageDropdown";
+import NotificationDropdown from "./dropdowns/NotificationDropdown";
 
 function IconsMenu() {
   return (
-    <div className="flex items-center gap-4 text-gray-600">
-      <div>
-        <Settings className="h-5 w-5" />
-      </div>
+    <div className="flex items-center gap-2 sm:gap-3 text-gray-600">
+      {/* Settings Dropdown */}
+      <SettingDropdown />
 
-      <div className="indicator">
-        <span className="indicator-item status status-info"></span>
-        <Mail className="h-5 w-5 " />
-      </div>
+      {/* Messages Dropdown */}
+      <MessageDropdown />
 
-      <div className="indicator">
-        <span className="indicator-item status status-info animate-pulse"></span>
-        <Bell className="h-5 w-5" />
-      </div>
+      {/* Notifications Dropdown */}
+      <NotificationDropdown />
     </div>
   );
 }
 
-export default IconsMenu
+export default IconsMenu;
