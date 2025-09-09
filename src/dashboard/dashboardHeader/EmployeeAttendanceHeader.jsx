@@ -4,17 +4,18 @@ import Breadcrumb from "./Breadcrumbs";
 import PageTitle from "./PageTitle";
 import DateTime from "./DateTime";  
 
-const EmployeeAttendanceHeader = ({
-  title = "Employee Attendance",
-  date = "13 January, 2024",
-  time = "11:23 AM",
-  breadcrumbItems = [
-    { label: "Dashboard", active: false },
-    { label: "Employee", active: false },
-    { label: "Attendance", active: true },
-  ],
-  className = "",
-}) => {
+const EmployeeAttendanceHeader = (props) => {
+  const {
+    title = "Employee Attendance",
+    date = "13 January, 2024",
+    time = "11:23 AM",
+    breadcrumbItems = [
+      { label: "Dashboard", active: false },
+      { label: "Employee", active: false },
+      { label: "Attendance", active: true },
+    ],
+    className = "",
+  } = props;
   return (
     <div className={`dashboard-header ${className}`}>
       <div className="container-dashboard ">
