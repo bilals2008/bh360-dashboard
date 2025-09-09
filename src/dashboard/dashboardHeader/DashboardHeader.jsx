@@ -1,19 +1,16 @@
-// File: src/dashboard/dashboardHeader/EmployeeAttendanceHeader.jsx
+// File: src/dashboard/dashboardHeader/DashboardHeader.jsx
+// Generic component for other pages - just pass different props
 import React from "react";
 import Breadcrumb from "./Breadcrumbs";
 import PageTitle from "./PageTitle";
-import DateTime from "./DateTime";  
+import DateTime from "./DateTime";
 
-const EmployeeAttendanceHeader = (props) => {
+const DashboardHeader = (props) => {
   const {
-    title = "Employee Attendance",
+    title,
     date = "13 January, 2024",
     time = "11:23 AM",
-    breadcrumbItems = [
-      { label: "Dashboard", active: false },
-      { label: "Employee", active: false },
-      { label: "Attendance", active: true },
-    ],
+    breadcrumbItems = [],
     className = "",
   } = props;
 
@@ -38,4 +35,25 @@ const EmployeeAttendanceHeader = (props) => {
   );
 };
 
-export default EmployeeAttendanceHeader;
+export default DashboardHeader;
+
+// Usage example for other pages:
+/*
+// For Reports page:
+<DashboardHeader 
+  title="Reports and Analytics"
+  breadcrumbItems={[
+    { label: "Dashboard", active: false },
+    { label: "Reports and Analytics", active: true },
+  ]}
+/>
+
+// For Schedule page:
+<DashboardHeader 
+  title="Schedule"
+  breadcrumbItems={[
+    { label: "Dashboard", active: false },
+    { label: "Schedule", active: true },
+  ]}
+/>
+*/

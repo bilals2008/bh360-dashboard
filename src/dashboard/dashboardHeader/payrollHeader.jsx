@@ -1,18 +1,19 @@
-// File: src/dashboard/dashboardHeader/EmployeeAttendanceHeader.jsx
+// File: src/dashboard/dashboardHeader/payrollHeader.jsx
+// File: src/dashboard/dashboardHeader/PayrollHeader.jsx
 import React from "react";
 import Breadcrumb from "./Breadcrumbs";
 import PageTitle from "./PageTitle";
 import DateTime from "./DateTime";  
 
-const EmployeeAttendanceHeader = (props) => {
+const PayrollHeader = (props) => {
   const {
-    title = "Employee Attendance",
+    title = "Payroll",
     date = "13 January, 2024",
     time = "11:23 AM",
     breadcrumbItems = [
       { label: "Dashboard", active: false },
-      { label: "Employee", active: false },
-      { label: "Attendance", active: true },
+      { label: "Payroll", active: false },
+      { label: "Payroll Information", active: true },
     ],
     className = "",
   } = props;
@@ -38,4 +39,4 @@ const EmployeeAttendanceHeader = (props) => {
   );
 };
 
-export default EmployeeAttendanceHeader;
+export default PayrollHeader;
