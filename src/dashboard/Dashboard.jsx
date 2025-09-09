@@ -1,10 +1,12 @@
+// File: src/dashboard/Dashboard.jsx
 import React from 'react'
+import EmployeeAttendanceHeader from './dashboardHeader/EmployeeAttendanceHeader';
 
 function Dashboard() {
   return (
-  <>
- <p>Dashboard here</p>
-  </>
+  <div className='font-karla'>
+ <EmployeeAttendanceHeader/>
+  </div>
   )
 }
 
