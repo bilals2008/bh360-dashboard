@@ -3,6 +3,7 @@ import React from "react";
 import DashboardHeader from "../dashboardHeader/DashboardHeader";
 import StatsGrid from "./attendance-stats/StatsGrid";
 import EmployeeTable from "./EmpolyeeTable/EmpolyeeTable";
+import EmpolyeeControlBar from "./EmployeeControlsBar/EmployeeControlsBar";
 
 function EmpolyeeAttendace() {
   return (
@@ -16,11 +17,11 @@ function EmpolyeeAttendace() {
             { label: "Attendance", active: true },
           ]}
         />
-
         {/* Stats Grid */}
         <div className="w-full">
           <StatsGrid />
         </div>
+<EmpolyeeControlBar/>
 
         {/* Employee Table */}
         <div className="w-full">
