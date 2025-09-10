@@ -7,6 +7,7 @@ import {
 
 export const AccordionMenuItem = ({ item, activeSubItem, onSubItemClick }) => {
   const Icon = item.icon;
+// console.log();
 
   return (
     <AccordionItem
@@ -23,7 +24,12 @@ export const AccordionMenuItem = ({ item, activeSubItem, onSubItemClick }) => {
 
       <AccordionContent className="mt-2 ml-9 space-y-0.5">
         {item.subItems.map((subItem, index) => {
-          const isActive = activeSubItem === `${item.id}-${subItem}`;
+          // for click to
+          // const isActive = activeSubItem === `${item.id}-${subItem}`;
+
+          // for only one
+              const isActive = subItem === "Employee directory";
+          
           return (
             <div
               key={index}

@@ -55,7 +55,7 @@ const EmployeeTable = () => {
                   colSpan={8}
                   className="text-center py-10 text-muted-foreground"
                 >
-                  <span className="loading loading-spinner loading-md lg:loading-lg"></span>
+                    <span className="loading loading-spinner loading-md lg:loading-lg"></span>
                 </td>
               </tr>
             ) : (

@@ -23,7 +23,7 @@ export const menuItems = [
     icon: Users,
     label: "Employee",
     type: "dropdown",
-    subItems: ["Employee directory", "Absence Trends"],
+    subItems: ["Employee directory","Attendance","Leave Request", "Absence Trends"],
   },
   {
     id: "recruitment",
