@@ -1,3 +1,4 @@
+/* File: src/index.css */
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "daisyui";
@@ -173,9 +174,50 @@
   }
   body {
     @apply bg-background text-foreground font-karla;
+    overflow-x: hidden; /* Body horizontal scroll prevent */
+    max-width: 100vw;   /* Viewport width se zyada na ho */
+  }
+  
+  /* Mobile responsive container */
+  .mobile-container {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 }
 
+/* Mobile table fixes */
+@media (max-width: 768px) {
+  .table-container {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    border-radius: 0;
+  }
+  
+  .table-scroll {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Enhanced scrollbar for mobile */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.05);
+  border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
 /* ================== COMPONENTS ================== */
 @layer components {
   /* Sidebar */
@@ -251,5 +293,61 @@
   }
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent;
+  }
+}
+/* Custom CSS for table scroll isolation */
+.table-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  touch-action: pan-x;
+}
+
+.table-scroll-container::-webkit-scrollbar {
+  height: 4px;
+}
+
+.table-scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 2px;
+}
+
+
+/* Add this to your index.css */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+  .mobile-container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .table-container {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    width: calc(100vw - 1rem);
+    max-width: calc(100vw - 1rem);
+  }
+  
+  /* Force container constraints */
+  .overflow-x-auto {
+    width: 100% !important;
+    max-width: calc(100vw - 1rem) !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .table-container {
+    width: calc(100vw - 2rem);
+    max-width: calc(100vw - 2rem);
   }
 }

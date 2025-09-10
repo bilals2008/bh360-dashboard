@@ -15,7 +15,7 @@ const DashboardHeader = (props) => {
   } = props;
 
   return (
-    <div className={`dashboard-header ${className}`}>
+    <div className={`dashboard-header pb-5 ${className}`}>
       <div className="container-dashboard ">
         <div className="flex flex-col md:flex-row-reverse  md:items-center justify-between">
           {/* Top Row - Date/Time */}
