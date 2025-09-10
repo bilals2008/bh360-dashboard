@@ -1,3 +1,4 @@
+// File: src/components/Sidebar/SidebarItem.jsx
 export const SidebarItem = ({ item }) => {
   const Icon = item.icon;
 

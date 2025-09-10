@@ -1,3 +1,4 @@
+// File: src/components/Sidebar/menuItems.js
 import {
   LayoutDashboard,
   Users,
