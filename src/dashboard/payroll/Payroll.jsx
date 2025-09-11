@@ -3,6 +3,7 @@ import React from "react";
 import DashboardHeader from "@/dashboard/dashboardHeader/DashboardHeader";
 import PayrollView from "@/dashboard/payroll/PayrollView";
 import EmpolyeeControlBar from "../EmployeeControlsBar/EmployeeControlsBar";
+import PayrollStats from "./payroll-stats/PayrollStats";
 
 function Payroll() {
   return (
@@ -16,6 +17,7 @@ function Payroll() {
             { label: "Payroll information", active: true },
           ]}
         />
+        <PayrollStats/>
         <EmpolyeeControlBar/>
         <PayrollView />
       </div>
