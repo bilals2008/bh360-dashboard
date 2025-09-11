@@ -38,7 +38,7 @@ export const AccordionMenuItem = ({ item, activeSubItem, onSubItemClick }) => {
                 }}
               >
                 {isActive && (
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#524feb]" />
+                  <div className="w-3 h-3 rounded-full bg-[#524feb]" />
                 )}
                 <span className="truncate overflow-hidden whitespace-ellipsis">
                   {subItem.label}

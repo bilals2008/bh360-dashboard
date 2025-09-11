@@ -1,5 +1,4 @@
-// File: src/components/shared/DynamicTable.jsx
-// File: src/components/shared/DynamicTable.jsx
+
 
 import React, { useState, useMemo } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
