@@ -1,3 +1,4 @@
+// File: src/dashboard/message/Message.jsx
 import React from 'react'
 import DashboardHeader from '../dashboardHeader/DashboardHeader';
 

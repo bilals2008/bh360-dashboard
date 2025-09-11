@@ -1,3 +1,4 @@
+// File: src/dashboard/Dashboard.jsx
 import { Outlet } from 'react-router-dom';
 
 function Dashboard() {

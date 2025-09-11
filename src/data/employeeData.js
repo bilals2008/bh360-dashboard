@@ -1,0 +1,236 @@
+// File: src/data/employees/mockData.js
+
+// Base employee data with all fields for both attendance and payroll
+ const employeesDatas = [
+  {
+    id: 1,
+    date: "13/01",
+    name: "Aisha Doe",
+    avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+    initials: "AD",
+    role: "HR Manager",
+    department: "HR",
+    employmentType: "Full-Time",
+
+    // Attendance specific fields
+    status: "Present",
+    checkIn: "09:00 AM",
+    checkOut: "05:00 PM",
+    overTime: "1h",
+    hoursWorked: 160,
+
+    // Payroll specific fields
+    basicSalary: 100000,
+    deductions: 5000,
+    overtime: 2000,
+    netSalary: 97000,
+    payrollStatus: "Paid",
+  },
+  {
+    id: 2,
+    date: "13/01",
+    name: "Ahmed Khan",
+    avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+    initials: "AK",
+    role: "Software Engineer",
+    department: "IT",
+    employmentType: "Full-Time",
+
+    status: "Late",
+    checkIn: "09:25 AM",
+    checkOut: "05:15 PM",
+    overTime: "0h",
+    hoursWorked: 176,
+
+    basicSalary: 120000,
+    deductions: 6000,
+    overtime: 1500,
+    netSalary: 115500,
+    payrollStatus: "Pending",
+  },
+  {
+    id: 3,
+    date: "13/01",
+    name: "Fatima Ali",
+    avatar: "https://randomuser.me/api/portraits/women/3.jpg",
+    initials: "FA",
+    role: "Marketing Specialist",
+    department: "Marketing",
+    employmentType: "Full-Time",
+
+    status: "Absent",
+    checkIn: "-",
+    checkOut: "-",
+    overTime: "0h",
+    hoursWorked: 150,
+
+    basicSalary: 90000,
+    deductions: 4000,
+    overtime: 2500,
+    netSalary: 88500,
+    payrollStatus: "Paid",
+  },
+  {
+    id: 4,
+    date: "13/01",
+    name: "Bilal Hassan",
+    avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+    initials: "BH",
+    role: "Sales Executive",
+    department: "Sales",
+    employmentType: "Part-Time",
+
+    status: "Present",
+    checkIn: "10:00 AM",
+    checkOut: "03:00 PM",
+    overTime: "0.5h",
+    hoursWorked: 168,
+
+    basicSalary: 110000,
+    deductions: 5500,
+    overtime: 2000,
+    netSalary: 106500,
+    payrollStatus: "Pending",
+  },
+  {
+    id: 5,
+    date: "13/01",
+    name: "Sana Raza",
+    avatar: "https://randomuser.me/api/portraits/women/5.jpg",
+    initials: "SR",
+    role: "Designer",
+    department: "Design",
+    employmentType: "Full-Time",
+
+    status: "Late",
+    checkIn: "09:15 AM",
+    checkOut: "05:30 PM",
+    overTime: "0.5h",
+    hoursWorked: 160,
+
+    basicSalary: 100000,
+    deductions: 0,
+    overtime: 2000,
+    netSalary: 102000,
+    payrollStatus: "Paid",
+  },
+  {
+    id: 6,
+    date: "13/01",
+    name: "Usman Tariq",
+    avatar: "https://randomuser.me/api/portraits/men/6.jpg",
+    initials: "UT",
+    role: "Developer",
+    department: "IT",
+    employmentType: "Part-Time",
+
+    status: "Present",
+    checkIn: "11:00 AM",
+    checkOut: "04:00 PM",
+    overTime: "0h",
+    hoursWorked: 160,
+
+    basicSalary: 100000,
+    deductions: 0,
+    overtime: 2000,
+    netSalary: 102000,
+    payrollStatus: "Paid",
+  },
+  {
+    id: 7,
+    date: "13/01",
+    name: "Hina Iqbal",
+    avatar: "https://randomuser.me/api/portraits/women/7.jpg",
+    initials: "HI",
+    role: "Content Writer",
+    department: "Marketing",
+    employmentType: "Full-Time",
+
+    status: "Absent",
+    checkIn: "-",
+    checkOut: "-",
+    overTime: "0h",
+    hoursWorked: 152,
+
+    basicSalary: 85000,
+    deductions: 3000,
+    overtime: 0,
+    netSalary: 82000,
+    payrollStatus: "Pending",
+  },
+  {
+    id: 8,
+    date: "13/01",
+    name: "Owais Malik",
+    avatar: "https://randomuser.me/api/portraits/men/8.jpg",
+    initials: "OM",
+    role: "Support Executive",
+    department: "Support",
+    employmentType: "Full-Time",
+
+    status: "Present",
+    checkIn: "09:05 AM",
+    checkOut: "05:10 PM",
+    overTime: "0.5h",
+    hoursWorked: 164,
+
+    basicSalary: 75000,
+    deductions: 2500,
+    overtime: 1500,
+    netSalary: 74000,
+    payrollStatus: "Paid",
+  },
+  {
+    id: 9,
+    date: "13/01",
+    name: "Maryam Shah",
+    avatar: "https://randomuser.me/api/portraits/women/9.jpg",
+    initials: "MS",
+    role: "HR Assistant",
+    department: "HR",
+    employmentType: "Part-Time",
+
+    status: "Late",
+    checkIn: "10:30 AM",
+    checkOut: "03:20 PM",
+    overTime: "0h",
+    hoursWorked: 140,
+
+    basicSalary: 65000,
+    deductions: 2000,
+    overtime: 0,
+    netSalary: 63000,
+    payrollStatus: "Processing",
+  },
+  {
+    id: 10,
+    date: "13/01",
+    name: "Ali Raza",
+    avatar: "https://randomuser.me/api/portraits/men/10.jpg",
+    initials: "AR",
+    role: "Manager",
+    department: "Sales",
+    employmentType: "Full-Time",
+
+    status: "Present",
+    checkIn: "09:00 AM",
+    checkOut: "05:00 PM",
+    overTime: "1h",
+    hoursWorked: 172,
+
+    basicSalary: 150000,
+    deductions: 8000,
+    overtime: 3000,
+    netSalary: 145000,
+    payrollStatus: "Paid",
+  },
+];
+// console.log(employeesData);
+
+ const employeesData = employeesDatas.map((item) => {
+   return {...item,role:item.role.length > 7 ? item.role.slice(0, 8) + ".." : item.role}
+ });
+//  console.log(NameSplit);
+console.log(employeesData);
+
+export {employeesData}
