@@ -1,3 +1,4 @@
+// File: src/components/shared/DynamicTable.jsx
 
 
 import React, { useState, useMemo } from "react";
@@ -173,7 +174,7 @@ const DynamicTable = ({
                   colSpan={config.columns.length}
                   className="text-left text-muted-foreground"
                 >
-                  <span className="loading loading-spinner loading-md lg:loading-lg"></span>
+                  <p className="py-10 loading text-red-600 loading-spinner loading-md lg:loading-lg"></p>
                 </td>
               </tr>
             ) : paginatedData.length === 0 ? (
