@@ -17,11 +17,11 @@ function MessageDropdown() {
         <Mail className="h-4 w-4 sm:h-5 sm:w-5" />
       </DropdownMenuTrigger>
 
-      <DropdownMenuContent className="w-40 sm:w-52 md:w-60" align="end">
+      <DropdownMenuContent className=" w-40 sm:w-52 md:w-60" align="end">
         {dropdownMenus.map(({ id, label, icon: Icon }) => (
           <DropdownMenuItem
             key={id}
-            className="py-1 sm:py-1.5 text-xs sm:text-sm hover:bg-hover"
+            className="py-3 text-xs sm:text-sm"
           >
             <Icon className="mr-1 sm:mr-2 h-3 w-3 sm:h-3.5 sm:w-3.5 flex-shrink-0" />
             <span className="truncate">{label}</span>
