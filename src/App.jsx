@@ -1,10 +1,15 @@
+// File: src/App.jsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+import { lazy } from "react";
 import MainLayout from "./layout/MainLayout";
-import Dashboard from "./dashboard/Dashboard";
-import EmpolyeeAttendace from "./dashboard/EmpolyeeAttentance/EmpolyeeAttendace";
-import Payroll from "./dashboard/payroll/Payroll";
-import Message from "./dashboard/message/Message";
+
+// lazy imports
+const Dashboard = lazy(() => import("./dashboard/Dashboard"));
+const EmpolyeeAttendace = lazy(() =>
+  import("./dashboard/EmpolyeeAttentance/EmpolyeeAttendace")
+);
+const Payroll = lazy(() => import("./dashboard/payroll/Payroll"));
+const Message = lazy(() => import("./dashboard/message/Message"));
 
 const router = createBrowserRouter([
   {
@@ -19,22 +24,10 @@ const router = createBrowserRouter([
         path: "dashboard",
         element: <Dashboard />,
         children: [
-          {
-            index: true,
-            element: <EmpolyeeAttendace />,
-          },
-          {
-            path: "attendance",
-            element: <EmpolyeeAttendace />,
-          },
-          {
-            path: "payroll",
-            element: <Payroll />,
-          },
-          {
-            path: "message",
-            element: <Message />,
-          },
+          { index: true, element: <EmpolyeeAttendace /> },
+          { path: "attendance", element: <EmpolyeeAttendace /> },
+          { path: "payroll", element: <Payroll /> },
+          { path: "message", element: <Message /> },
         ],
       },
     ],

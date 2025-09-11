@@ -1,9 +1,10 @@
 // File: src/layout/MainLayout.jsx
-import React from 'react'
-import Header from './Header'
-import { Outlet } from 'react-router-dom';
-import Sidebar from '../components/Sidebar/Sidebar';
-import '@fontsource/karla/500.css';
+import { Outlet } from "react-router-dom";
+import { Suspense } from "react";
+import Sidebar from "../components/Sidebar/Sidebar";
+import Header from "./Header";
+import Loading from "@/other/Loading";
+
 function MainLayout() {
   return (
     <>
@@ -14,7 +15,9 @@ function MainLayout() {
           <Sidebar />
 
           <main className="flex-1">
-            <Outlet />
+            <Suspense fallback={<Loading />}>
+              <Outlet />
+            </Suspense>
           </main>
         </div>
       </div>
@@ -22,4 +25,4 @@ function MainLayout() {
   );
 }
 
-export default MainLayout
+export default MainLayout;
