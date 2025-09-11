@@ -9,6 +9,7 @@ import {
   getEmploymentTypeBadgeClasses,
   getPayrollStatusBadgeClasses,
 } from "@/data/utils/styleUtils";
+import Pagination from "../../dashboard/EmpolyeeAttentance/EmpolyeeTable/Pagination";
 
 const DynamicTable = ({
   data,
@@ -203,7 +204,7 @@ const DynamicTable = ({
         </table>
       </div>
 
-      {/* {totalPages > 1 && (
+      {totalPages > 1 && (
         <Pagination
           totalPages={totalPages}
           currentPage={currentPage}
@@ -211,8 +212,8 @@ const DynamicTable = ({
           showingStart={startIndex + 1}
           showingEnd={endIndex}
           totalItems={totalItems}
-        /> */}
-      {/* )} */}
+        />
+      )}
     </div>
   );
 };

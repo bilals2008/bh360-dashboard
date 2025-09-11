@@ -1,3 +1,4 @@
+// File: src/dashboard/payroll/Payroll.jsx
 import React from "react";
 import DashboardHeader from "@/dashboard/dashboardHeader/DashboardHeader";
 import PayrollView from "@/dashboard/payroll/PayrollView";
