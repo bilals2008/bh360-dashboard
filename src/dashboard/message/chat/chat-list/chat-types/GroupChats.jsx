@@ -2,7 +2,7 @@
 import { CheckCheck, Hash } from "lucide-react";
 import React from "react";
 import { groupChatsData } from "../../../../../data/chatData";
-import { useChat } from "../../../../../context/chatContext";
+import { useChat } from "@/context/ChatContext";
 
 function GroupChats() {
   const { selectChat } = useChat();

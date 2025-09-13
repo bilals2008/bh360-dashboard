@@ -3,7 +3,8 @@ import { CheckCheck, MessageCircleMore } from "lucide-react";
 import React from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { allChatsData } from "@/data/chatData";
-import { useChat } from "../../../../../context/chatContext";
+import { useChat } from "@/context/ChatContext";
+
 
 function AllChats() {
   const { selectChat } = useChat();

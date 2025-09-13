@@ -2,7 +2,7 @@
 import React from "react";
 import ChatList from "./chat-list/ChatList";
 import ChatInterface from "./chat-window/ChatWindow";
-import { useChat } from "../../../../../context/chatContext";
+import { useChat } from "@/context/ChatContext";
 
 function Chat() {
   const { selectedChat } = useChat();

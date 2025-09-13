@@ -3,7 +3,7 @@ import React from "react";
 import ChatHeader from "./ui/ChatHeader";
 import ChatInput from "./ui/ChatInput";
 import Message from "./ui/Message";
-import { useChat } from "../../../../../context/chatContext";
+import { useChat } from "@/context/ChatContext";
 
 const ChatInterface = () => {
   const { selectedChat, messages } = useChat();
