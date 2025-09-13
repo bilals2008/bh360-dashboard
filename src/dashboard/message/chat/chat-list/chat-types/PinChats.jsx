@@ -3,8 +3,7 @@ import { CheckCheck, Pin } from "lucide-react";
 import React from "react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { pinnedChatsData } from "@/data/chatData";
-import { useChat } from "@/context/ChatContext";
-
+import { useChat } from "../../../../../context/chatContext";
 function PinChats() {
    const { selectChat } = useChat();
   return (
