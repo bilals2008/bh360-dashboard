@@ -1,7 +1,7 @@
 // File: src/dashboard/message/chat/chat-list/chat-types/GroupChats.jsx
 import { CheckCheck, Hash } from "lucide-react";
 import React from "react";
-import { groupChatsData } from "../../../../../data/chatData";
+import { groupChatsData } from "@/data/chatData";
 import { useChat } from "@/context/chatContext";
 
 function GroupChats() {
@@ -16,10 +16,10 @@ function GroupChats() {
         {groupChatsData.map((chat) => (
           <div
             key={chat.id}
-            className="flex items-center gap-3 p-2 hover:bg-gray-50 rounded-lg cursor-pointer"
+            className="flex items-center gap-3 p-2 rounded-lg cursor-pointer"
             onClick={() => selectChat(chat)}
           >
-            <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10rounded-lg flex items-center justify-center">
               <Hash size={18} className="text-gray-600" />
             </div>
             <div className="flex-1">
