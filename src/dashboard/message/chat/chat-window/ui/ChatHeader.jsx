@@ -13,20 +13,22 @@ import {
 import Avatar from "./Avatar";
 import UserAvatar from "./Avatar";
 import { Button } from "@/components/ui/button";
-import { useChat } from "../../../../../context/chatContext";
+import { useChat } from "../../../../../context/ChatContext";
 const ChatHeader = ({ user }) => {
-
   const { selectChat } = useChat();
 
-   if (!user) {
-     return null; 
-   }
+  if (!user) {
+    return null;
+  }
   return (
     <div className="py-3">
       <div className="flex items-center justify-between">
         <div className="flex items-center ">
-          <Button variant="none" className="md:hidden mr-1"
-          onClick={() => selectChat(null)}>
+          <Button
+            variant="none"
+            className="md:hidden mr-1"
+            onClick={() => selectChat(null)}
+          >
             <ArrowLeft className="w-5 h-5 text-gray-600" />
           </Button>
           <UserAvatar />

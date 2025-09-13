@@ -2,10 +2,10 @@
 import { CheckCheck, Hash } from "lucide-react";
 import React from "react";
 import { groupChatsData } from "../../../../../data/chatData";
-import { useChat } from "../../../../../context/chatContext";
+import { useChat } from "../../../../../context/ChatContext";
 
 function GroupChats() {
-  const { selectChat } = useChat(); 
+  const { selectChat } = useChat();
   return (
     <div className="pb-2">
       <p className="flex gap-1 items-center mb-3 text-gray-600 text-sm font-medium">
