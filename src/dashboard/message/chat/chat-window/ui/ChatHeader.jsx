@@ -13,7 +13,7 @@ import {
 import Avatar from "./Avatar";
 import UserAvatar from "./Avatar";
 import { Button } from "@/components/ui/button";
-import { useChat } from "@/context/ChatContext";
+import { useChat } from "@/context/chatContext";
 const ChatHeader = ({ user }) => {
   const { selectChat } = useChat();
 

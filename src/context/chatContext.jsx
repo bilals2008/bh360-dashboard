@@ -1,4 +1,5 @@
 // File: src/context/chatContext.jsx
+
 import React, { createContext, useContext, useState } from "react";
 import { groupChatsData, pinnedChatsData, allChatsData } from "@/data/chatData";
 import { initialMessages } from "@/dashboard/message/chat/chat-window/data/messages";
