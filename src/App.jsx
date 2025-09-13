@@ -2,6 +2,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { lazy } from "react";
 import MainLayout from "./layout/MainLayout";
+import { ChatProvider } from "./context/chatContext";
 
 // lazy imports
 const Dashboard = lazy(() => import("./dashboard/Dashboard"));
@@ -27,7 +28,14 @@ const router = createBrowserRouter([
           { index: true, element: <EmpolyeeAttendace /> },
           { path: "attendance", element: <EmpolyeeAttendace /> },
           { path: "payroll", element: <Payroll /> },
-          { path: "message", element: <Message /> },
+          {
+            path: "message",
+            element: (
+              <ChatProvider>
+                <Message />
+              </ChatProvider>
+            ),
+          },
         ],
       },
     ],

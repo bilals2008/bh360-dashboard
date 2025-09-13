@@ -1,3 +1,4 @@
+// File: src/dashboard/EmployeeControlsBar/SearchBAr.jsx
 import { Search } from 'lucide-react'
 import { Input } from "@/components/ui/input";
 

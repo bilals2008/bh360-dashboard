@@ -36,9 +36,9 @@ export const menuItems = [
     label: "Recruitment",
     type: "dropdown",
     subItems: [
-      { label: "Job Postings", path: "/recruitment/job-postings" },
-      { label: "Applications", path: "/recruitment/applications" },
-      { label: "Interviews", path: "/recruitment/interviews" },
+      { label: "Job Postings", path: "/dashboard/message" },
+      { label: "Applications", path: "/dashboard/message" },
+      { label: "Interviews", path: "/dashboard/message" },
     ],
   },
   {

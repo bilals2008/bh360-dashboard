@@ -5,6 +5,7 @@ import SearchBAr from "./SearchBAr";
 import FilterBtn from "./FilterBtn";
 import ExportBtn from "./ExportBtn";
 import TypeMenu from "./TypeMenu";
+import { useState } from "react";
 
 function EmpolyeeControlBar({
   searchTerm,
@@ -17,6 +18,7 @@ function EmpolyeeControlBar({
   setSelectedEmploymentType,
   handleExportCSV,
 }) {
+
   return (
     <div className="mb-6 text-muted-foreground font-extralight">
       <div className="flex flex-wrap items-center justify-between gap-5">
@@ -31,12 +33,10 @@ function EmpolyeeControlBar({
             selectedStatus={selectedStatus}
             setSelectedStatus={setSelectedStatus}
           />
-
           <TypeMenu
             selectedEmploymentType={selectedEmploymentType}
             setSelectedEmploymentType={setSelectedEmploymentType}
           />
-
           <div className="flex items-center">
             <div className="text-sm flex gap-2 items-center px-3 py-2 bg- rounded-lg">
               <CalendarRangeIcon size={14} />

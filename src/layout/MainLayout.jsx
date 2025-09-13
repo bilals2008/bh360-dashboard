@@ -11,7 +11,7 @@ function MainLayout() {
       <div className="min-h-screen bg-black/15">
         <Header />
 
-        <div className="flex">
+        <div className="flex bg-background">
           <Sidebar />
 
           <main className="flex-1">
